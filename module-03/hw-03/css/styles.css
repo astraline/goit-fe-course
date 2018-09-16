@@ -32,6 +32,9 @@ a:hover, a:focus{
 ul{
     padding-left: 150px;
 }
+nav{
+    text-align: center;
+}
 
 li{
     margin: 0 auto;

@@ -68,20 +68,31 @@ input[type="checkbox"].visually-hidden{
     overflow: hidden;
 }
 
+.content-list-item :nth-last-child(2n){
+    margin-right: 0;
+}
+
+.content-list-item :nth-last-child(-n+2){
+    margin-right: 30px;
+}
+
+
 .paragraph {
     font-family: Ubuntu;
     color:  #b4ad9e;
     width: 420px;
     margin: 0px;
-
+    margin-bottom: 30px;
 }
 
 .image{
-    float: right;
+    margin-bottom: 30px;
+    display: block;
 }
 
 .heading{
     margin: 0px;
+    margin-bottom: 40px;
     font-family: 'Playfair Display', serif;
     color:  #626262;
 }

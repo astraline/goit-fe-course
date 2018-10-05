@@ -27,9 +27,9 @@ html{
 .link:hover,.link:focus{color:  #03a9f4;}
 
 .navigate{
-    padding-left: 150px;
-    padding: 0;
     margin: 0;
+    padding: 0;
+    /* padding-left: 150px; */
     text-align: center;
     font-size: 0;
 }
@@ -68,12 +68,27 @@ input[type="checkbox"].visually-hidden{
     overflow: hidden;
 }
 
+.content{
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+}
+
+.content-list-item{
+    width: 420px;
+    display: inline-block;
+    margin-right: 60px;
+    margin-bottom: 130px;
+    font-size: 14px;
+}
+
 .content-list-item :nth-last-child(2n){
     margin-right: 0;
 }
 
 .content-list-item :nth-last-child(-n+2){
     margin-right: 30px;
+    margin-bottom: 0;
 }
 
 
@@ -97,21 +112,7 @@ input[type="checkbox"].visually-hidden{
     color:  #626262;
 }
 
-.content{
-    margin: 0;
-    padding: 0;
-    font-size: 0;
-}
-
-.content-list-item{
-    width: 420px;
-    display: inline-block;
-    margin-right: 60px;
-    margin-bottom: 130px;
-    font-size: 14px;
-}
-
-.button{
+.button  {
     font-family: PlayfairDisplay;
     color:  #626262;
     font-size: 20px;
@@ -120,9 +121,15 @@ input[type="checkbox"].visually-hidden{
     height: 60px;
     background-color: #ffffff;
     border-style: solid; 
+    border-width: 1px;
+    border-color:  #626262;
+    border-style: solid;
+    width: 162px;
+    height: 58px;
+    cursor: -webkit-grab;
 }
 
-.button :hover :focus{
-    color:  #03a9f4;
+.button:hover :focus{
+    color: #03a9f4;
 }
 

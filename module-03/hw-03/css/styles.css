@@ -82,7 +82,7 @@ input[type="checkbox"].visually-hidden{
     font-size: 14px;
 }
 
-.content-list-item :nth-last-child(2n){
+.content-list-item :nth-child(2n){
     margin-right: 0;
 }
 
@@ -127,6 +127,9 @@ input[type="checkbox"].visually-hidden{
     width: 162px;
     height: 58px;
     cursor: -webkit-grab;
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
 }
 
 .button:hover :focus{

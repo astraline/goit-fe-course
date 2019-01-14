@@ -27,8 +27,13 @@ html{
 }
 
 /*  LOGO  */
+.header {
+    padding-top: 26px;
+    padding-bottom: 55px;
+}
 
 .logo{
+    display: block;
     text-transform: uppercase;
     text-decoration: none;
     color:  #555252;
@@ -52,7 +57,6 @@ html{
     font-size: 14px;
     font-weight: 700;
     line-height: 11px;
-    height: 70px;
     text-align: left;
     text-decoration: none;
     text-transform: uppercase;
@@ -67,7 +71,7 @@ html{
     padding: 0;
 }
 
-.navigate{
+/* .navigate{
     list-style: none;
     text-decoration: none;
     text-transform: uppercase;
@@ -75,12 +79,19 @@ html{
     margin: 0;
     padding: 0;
     float: right;
-}
+} */
 
 .features-list{
     float: right;
-    display: block;
+    margin: 0;
+    margin-right: 16px;
+    list-style-type: none;
+    padding: 0;
     color: #0f0101;
+}
+
+.features-list:nth-last-child(1) {
+    margin-right: 0;
 }
 
 .link{
@@ -89,7 +100,6 @@ html{
     line-height: 11px;
     padding-left: 25px;
     color: #0f0101;
-    float: right;
 }
 
 .link:hover{
@@ -122,6 +132,14 @@ html{
     float: left;
 }
 
+.products-list li:nth-last-child(-n+4) {
+    margin-bottom: 0;
+}
+
+.products-list li:nth-child(4n+4) {
+    margin-right: 0;
+}
+
 .products-list{
     list-style: none;
     margin: 0;
@@ -136,6 +154,10 @@ html{
     text-align: center;
     margin: 0;
     margin-bottom: 60px;
+    color:  #515151;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 32px;
 }
 
 .products-title::after{
@@ -184,6 +206,7 @@ html{
 .blog{
     margin: 0 auto;
     padding: 0;
+    padding-bottom: 45px;
 }
 
 .blog ul {
@@ -195,6 +218,10 @@ html{
     text-align: center;
     margin: 0;
     margin-bottom: 60px;
+    color:  #515151;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 32px;
 }
 
 .news::after{

@@ -71,18 +71,14 @@ html{
     padding: 0;
 }
 
-/* .navigate{
-    list-style: none;
-    text-decoration: none;
-    text-transform: uppercase;
-    display: block;
+.features-list {
+    float: right;
     margin: 0;
     padding: 0;
-    float: right;
-} */
+}
 
-.features-list{
-    float: right;
+.features-item {
+    float: left;
     margin: 0;
     margin-right: 16px;
     list-style-type: none;
@@ -90,7 +86,7 @@ html{
     color: #0f0101;
 }
 
-.features-list:nth-last-child(1) {
+.features-item:nth-last-child(1) {
     margin-right: 0;
 }
 
@@ -100,6 +96,10 @@ html{
     line-height: 11px;
     padding-left: 25px;
     color: #0f0101;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 11px;
+    font-family: OpenSans, sans-serif;
 }
 
 .link:hover{

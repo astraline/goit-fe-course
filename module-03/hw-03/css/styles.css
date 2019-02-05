@@ -96,8 +96,7 @@ input[type="checkbox"].visually-hidden{
     font-family: Ubuntu;
     color:  #b4ad9e;
     width: 420px;
-    margin: 0px;
-    margin-bottom: 30px;
+    margin: 0;
 }
 
 .image{
@@ -106,7 +105,7 @@ input[type="checkbox"].visually-hidden{
 }
 
 .heading{
-    margin: 0px;
+    margin: 0;
     margin-bottom: 40px;
     font-family: 'Playfair Display', serif;
     color:  #626262;

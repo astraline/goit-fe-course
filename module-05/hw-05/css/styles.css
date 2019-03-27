@@ -10,18 +10,28 @@ html {
 
 .container{
     width: 1600px;
-    margin: 0;
+    margin: 0 auto;
     padding-bottom: 130px;
     padding-top: 36px;
+}
+
+.clearfix::after {
+    display: table;
+    content: '';
+    clear: both;
 }
 
 /*  LOGO  */
 
 .site-logo{
-    display: inline-block;
-    width: 80px;
-    margin-left: 215px;
-    text-align: left;
+    font-family: Roboto;
+    float: left;
+    color:  #555252;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 32px;
+    margin: 0;
+    padding: 0;
 }
 
 .site-logo::first-letter{
@@ -35,47 +45,50 @@ html {
 
 /*  NAVIGATION  */
 
-.navigation{
-    width: 1600px;
+.nav {
+    float: left;
     color:  #0f0101;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 11px;
-    text-decoration: none;
-    text-transform: uppercase;
-    margin-bottom: 32px;
-    margin-top: 0;
+    margin: 0 auto;
+    padding: 0;
 }
 
-.navigate{
-    text-align: right;
+.navigation {
+    float: right;
     list-style: none;
     text-decoration: none;
     text-transform: uppercase;
-    display: inline-block;
+    display: block;
+    font-family: Roboto;
     margin: 0;
     padding: 0;
-    width: 1090px;
 }
 
 .features-list{
-    text-align: right;
-    display: inline-block;
+    float: left;
+    display: block;
+    margin-left: 25px;
 }
 
 .features-list a{
     color: #0f0101;
 }
 
-.features-list :hover{
+.features-list:hover,
+.features-list:focus {
     color: #1abc9c;
+}
+
+.features-list:nth-child(1) {
+    margin-left: 0;
 }
 
 .link{
     display: block;
     text-decoration: none;
     line-height: 11px;
-    padding-left: 25px;
+    color:  #0f0101;
+    font-size: 14px;
+    font-weight: 700;
 }
 
 /*-- Slider --*/
@@ -306,6 +319,8 @@ background-color: #4ec6ab;
 .company{
     position: absolute;
     color: #46bfa9;
+    right: 5px;
+    text-decoration: none;
 }
 
 .rights,
